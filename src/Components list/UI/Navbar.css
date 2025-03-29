@@ -1,0 +1,37 @@
+.navbar {
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 1rem 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand h1 {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  .cart a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .cart a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .cart a:hover {
+    color: #ccc; /* Change color on hover */
+  }
