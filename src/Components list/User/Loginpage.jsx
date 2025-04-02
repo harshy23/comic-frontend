@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import api from '../../api';
 import Error from '../UI/Error';
-import {  useLocation, useNavigate } from 'react-router-dom';
+import {  useLocation, useNavigate ,Link} from 'react-router-dom';
 import { Authcontext } from '../UI/Authentication';
 // import Authentication, { authcontext } from '../UI/Authentication';
 
@@ -49,6 +49,7 @@ function LoginPage() {
       {error && <Error error={error}/>}
       <div className="bg-white p-8 rounded-lg shadow-md w-96">
         <h2 className="text-2xl font-semibold mb-4">Welcome</h2>
+        <h1>{error && <Error error={error}/>}</h1>
         <p className="text-gray-500 mb-6">Please login to your account.</p>
 
         <form onSubmit={handelsubmit} >
@@ -85,7 +86,7 @@ function LoginPage() {
         </form>
 
         <p className="mt-4 text-sm">
-          Don't have an account? <a href="#" className="text-blue-500 hover:underline">Sign Up</a>
+          Don't have an account? <Link to = "/UserRegistration"><p className="text-blue-500 hover:underline">Sign Up</p></Link>
         </p>
       </div>
     </div>

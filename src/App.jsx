@@ -16,6 +16,7 @@ import ProtectedRoute from "./Components list/UI/ProtectedRoute"
 import Authentication, { Authcontext } from "./Components list/UI/Authentication"
 import UserPage from "./Components list/User/Userpage"
 import VerifyingPayment from "./Components list/Checkout/Payement_status"
+import RegistrationPage from "./Components list/User/UserRegister"
 
 
 
@@ -52,6 +53,7 @@ function App() {
       <Route path="profile" element={<UserPage/>}/>
       <Route path="login" element={<LoginPage/>}/>
       <Route path="payment-status" element={<VerifyingPayment setnumcart={setnumcart}/>}/>
+      <Route path="UserRegistration" element={<RegistrationPage/>}/>
       </Route>
     </Routes>
     </BrowserRouter>
